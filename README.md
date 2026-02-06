@@ -1,27 +1,36 @@
-# BeehiveMQTT
+<p align="center">
+  <img src="assets/banner.svg" alt="BeehiveMQTT" width="800"/>
+</p>
 
-**The first native MQTT 3.1.1 broker for MicroPython**
+<p align="center">
+  <strong>The first native MQTT 3.1.1 broker for MicroPython</strong>
+</p>
 
-![MicroPython](https://img.shields.io/badge/MicroPython-1.19+-blue.svg)
-![MQTT](https://img.shields.io/badge/MQTT-3.1.1-green.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
+<p align="center">
+  <a href="#quick-start">Quick Start</a> &bull;
+  <a href="#usage-examples">Examples</a> &bull;
+  <a href="#architecture-overview">Architecture</a> &bull;
+  <a href="#configuration">Configuration</a> &bull;
+  <a href="docs/api.md">API</a> &bull;
+  <a href="CONTRIBUTING.md">Contributing</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/MicroPython-compatible-2b2728?logo=micropython" alt="MicroPython"/>
+  <img src="https://img.shields.io/badge/ESP32-ready-00979d" alt="ESP32"/>
+  <img src="https://img.shields.io/badge/MQTT-3.1.1-F5A623" alt="MQTT 3.1.1"/>
+  <img src="https://img.shields.io/badge/QoS-0%2F1%2F2-b060e0" alt="QoS 0/1/2"/>
+  <img src="https://img.shields.io/badge/tests-571%20passing-brightgreen" alt="Tests"/>
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License"/>
+</p>
+
+---
 
 BeehiveMQTT is the first and only native MQTT 3.1.1 broker for MicroPython, running directly on ESP32/RP2040 microcontrollers without requiring external infrastructure. Perfect for edge computing, IoT gateways, and distributed sensor networks.
 
-## Features
-
-| Feature | Support |
-|---------|---------|
-| QoS 0/1/2 | Full implementation of all Quality of Service levels |
-| Topic wildcards | Single-level (+) and multi-level (#) wildcards |
-| Retained messages | Persistent message retention per topic |
-| Will messages | Last Will and Testament for ungraceful disconnects |
-| Persistent sessions | Session state preservation across connections |
-| Pluggable authentication | Dictionary, ACL, and callback-based auth providers |
-| $SYS monitoring | Built-in system topic monitoring and statistics |
-| Memory guard | Configurable limits to prevent OOM conditions |
-| Event hooks & interceptors | Pre/post publish and connect hooks for custom logic |
+<p align="center">
+  <img src="assets/features.svg" alt="Features" width="800"/>
+</p>
 
 ## Quick Start
 
@@ -161,18 +170,18 @@ See [docs/configuration.md](docs/configuration.md) for detailed configuration op
 
 ## Architecture Overview
 
+<p align="center">
+  <img src="assets/architecture.svg" alt="Architecture" width="800"/>
+</p>
+
 BeehiveMQTT is designed with a modular architecture optimized for constrained devices:
 
-- **broker.py** - Core broker logic and client connection handling
-- **packet.py** - MQTT 3.1.1 packet encoding/decoding
-- **topic.py** - Topic tree and wildcard subscription matching
-- **session.py** - Client session state management
-- **router.py** - Message routing and delivery
-- **qos.py** - QoS 1 and QoS 2 flow control
-- **auth.py** - Authentication and authorization providers
-- **stats.py** - Statistics collection and $SYS topic publishing
-- **config.py** - Broker configuration management
-- **simple.py** - Simplified API for common use cases
+| Layer | Modules | Responsibility |
+|-------|---------|----------------|
+| **Public API** | `broker.py`, `simple.py`, `config.py`, `errors.py` | User-facing classes and configuration |
+| **Protocol Core** | `packet.py`, `router.py`, `qos.py`, `utils.py`, `ratelimit.py` | MQTT 3.1.1 packet handling and routing |
+| **Services** | `auth.py`, `retained.py`, `stats.py`, `logging.py` | Authentication, retention, monitoring |
+| **Data** | `session.py`, `topic.py` | Client state, topic trie with wildcards |
 
 ## Performance Estimates
 
@@ -243,4 +252,8 @@ BeehiveMQTT is licensed under the MIT License. See [LICENSE](LICENSE) for the fu
 
 ---
 
-Built with care for the MicroPython community.
+<p align="center">
+  <img src="assets/logo.svg" alt="BeehiveMQTT" width="60"/>
+  <br/>
+  <sub>Built with care for the MicroPython community</sub>
+</p>

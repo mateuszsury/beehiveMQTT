@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="chip-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="honey-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5A623"/>
+      <stop offset="100%" stop-color="#E8941A"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Chip body -->
+  <rect x="40" y="40" width="120" height="120" rx="12" fill="url(#chip-grad)" stroke="#2d4059" stroke-width="2"/>
+  <!-- Pins top -->
+  <rect x="60" y="28" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <rect x="80" y="28" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <rect x="100" y="28" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <rect x="120" y="28" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <!-- Pins bottom -->
+  <rect x="60" y="156" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <rect x="80" y="156" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <rect x="100" y="156" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <rect x="120" y="156" width="8" height="16" rx="2" fill="#4a6fa5"/>
+  <!-- Pins left -->
+  <rect x="28" y="60" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <rect x="28" y="80" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <rect x="28" y="100" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <rect x="28" y="120" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <!-- Pins right -->
+  <rect x="156" y="60" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <rect x="156" y="80" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <rect x="156" y="100" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <rect x="156" y="120" width="16" height="8" rx="2" fill="#4a6fa5"/>
+  <!-- Honeycomb hexagon -->
+  <polygon points="100,62 138,100 100,138 62,100" fill="url(#honey-g)" filter="url(#glow)"/>
+  <!-- Inner hex highlight -->
+  <polygon points="100,72 128,100 100,128 72,100" fill="none" stroke="#FFD180" stroke-width="1" opacity="0.5"/>
+  <!-- Signal/antenna icon -->
+  <circle cx="100" cy="103" r="4" fill="#1A1A1A"/>
+  <path d="M90,93 A14,14 0 0,1 110,93" stroke="#1A1A1A" stroke-width="2.5" fill="none"/>
+  <path d="M84,87 A22,22 0 0,1 116,87" stroke="#1A1A1A" stroke-width="2.5" fill="none"/>
+  <!-- Corner dot -->
+  <circle cx="52" cy="52" r="4" fill="#F5A623" opacity="0.8"/>
+</svg>
