@@ -82,7 +82,7 @@
     <text x="249" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#00c853" font-weight="600">ESP32</text>
     <rect x="301" y="0" width="96" height="26" rx="13" fill="#b060e0" opacity="0.15"/>
     <text x="349" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#b060e0" font-weight="600">QoS 0/1/2</text>
-    <rect x="409" y="0" width="75" height="26" rx="13" fill="#ff9800" opacity="0.15"/>
-    <text x="446" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#ff9800" font-weight="600">MIT</text>
+    <rect x="409" y="0" width="100" height="26" rx="13" fill="#ff9800" opacity="0.15"/>
+    <text x="459" y="17" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#ff9800" font-weight="600">Apache 2.0</text>
   </g>
 </svg>
