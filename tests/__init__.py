@@ -1,0 +1,1 @@
+"""BeehiveMQTT test suite."""

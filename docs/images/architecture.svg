@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="700" height="480">
+  <defs>
+    <style>
+      .layer-title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: 700; fill: #fff; }
+      .module-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #1A1A1A; }
+      .label-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10px; fill: #666; }
+    </style>
+  </defs>
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#1A1A1A">BeehiveMQTT Architecture</text>
+
+  <!-- Layer 1: Public API (amber) -->
+  <rect x="40" y="50" width="620" height="70" rx="8" fill="#FFF3E0" stroke="#F5A623" stroke-width="2"/>
+  <rect x="40" y="50" width="120" height="24" rx="4" fill="#F5A623"/>
+  <text x="100" y="66" text-anchor="middle" class="layer-title">Public API</text>
+  <rect x="60" y="82" width="140" height="28" rx="4" fill="#FFE0B2" stroke="#F5A623" stroke-width="1"/>
+  <text x="130" y="100" text-anchor="middle" class="module-text">MQTTBroker</text>
+  <rect x="220" y="82" width="180" height="28" rx="4" fill="#FFE0B2" stroke="#F5A623" stroke-width="1"/>
+  <text x="310" y="100" text-anchor="middle" class="module-text">BeehiveBrokerSimple</text>
+  <rect x="420" y="82" width="120" height="28" rx="4" fill="#FFE0B2" stroke="#F5A623" stroke-width="1"/>
+  <text x="480" y="100" text-anchor="middle" class="module-text">BrokerConfig</text>
+  <rect x="560" y="82" width="80" height="28" rx="4" fill="#FFE0B2" stroke="#F5A623" stroke-width="1"/>
+  <text x="600" y="100" text-anchor="middle" class="module-text">Errors</text>
+
+  <!-- Arrow down -->
+  <polygon points="350,120 360,135 340,135" fill="#999"/>
+
+  <!-- Layer 2: Core (blue) -->
+  <rect x="40" y="145" width="620" height="70" rx="8" fill="#E3F2FD" stroke="#2196F3" stroke-width="2"/>
+  <rect x="40" y="145" width="80" height="24" rx="4" fill="#2196F3"/>
+  <text x="80" y="161" text-anchor="middle" class="layer-title">Core</text>
+  <rect x="60" y="177" width="130" height="28" rx="4" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+  <text x="125" y="195" text-anchor="middle" class="module-text">broker.py</text>
+  <text x="125" y="205" text-anchor="middle" class="label-text">TCP Server + Dispatch</text>
+  <rect x="210" y="177" width="130" height="28" rx="4" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+  <text x="275" y="195" text-anchor="middle" class="module-text">packet.py</text>
+  <text x="275" y="205" text-anchor="middle" class="label-text">Parse/Build 14 types</text>
+  <rect x="360" y="177" width="130" height="28" rx="4" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+  <text x="425" y="195" text-anchor="middle" class="module-text">router.py</text>
+  <text x="425" y="205" text-anchor="middle" class="label-text">Pub/Sub routing</text>
+  <rect x="510" y="177" width="130" height="28" rx="4" fill="#BBDEFB" stroke="#2196F3" stroke-width="1"/>
+  <text x="575" y="195" text-anchor="middle" class="module-text">simple.py</text>
+  <text x="575" y="205" text-anchor="middle" class="label-text">3-line API wrapper</text>
+
+  <!-- Arrow down -->
+  <polygon points="350,215 360,230 340,230" fill="#999"/>
+
+  <!-- Layer 3: Services (green) -->
+  <rect x="40" y="240" width="620" height="70" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="40" y="240" width="100" height="24" rx="4" fill="#4CAF50"/>
+  <text x="90" y="256" text-anchor="middle" class="layer-title">Services</text>
+  <rect x="60" y="272" width="100" height="28" rx="4" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="110" y="290" text-anchor="middle" class="module-text">auth.py</text>
+  <rect x="175" y="272" width="100" height="28" rx="4" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="225" y="290" text-anchor="middle" class="module-text">qos.py</text>
+  <rect x="290" y="272" width="100" height="28" rx="4" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="340" y="290" text-anchor="middle" class="module-text">retained.py</text>
+  <rect x="405" y="272" width="100" height="28" rx="4" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="455" y="290" text-anchor="middle" class="module-text">stats.py</text>
+  <rect x="520" y="272" width="120" height="28" rx="4" fill="#C8E6C9" stroke="#4CAF50" stroke-width="1"/>
+  <text x="580" y="290" text-anchor="middle" class="module-text">logging.py</text>
+
+  <!-- Arrow down -->
+  <polygon points="350,310 360,325 340,325" fill="#999"/>
+
+  <!-- Layer 4: Data (purple) -->
+  <rect x="40" y="335" width="620" height="70" rx="8" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+  <rect x="40" y="335" width="80" height="24" rx="4" fill="#9C27B0"/>
+  <text x="80" y="351" text-anchor="middle" class="layer-title">Data</text>
+  <rect x="60" y="367" width="180" height="28" rx="4" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1"/>
+  <text x="150" y="385" text-anchor="middle" class="module-text">session.py</text>
+  <text x="150" y="395" text-anchor="middle" class="label-text">Client sessions + queues</text>
+  <rect x="260" y="367" width="180" height="28" rx="4" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1"/>
+  <text x="350" y="385" text-anchor="middle" class="module-text">topic.py</text>
+  <text x="350" y="395" text-anchor="middle" class="label-text">Trie + wildcard matching</text>
+  <rect x="460" y="367" width="180" height="28" rx="4" fill="#E1BEE7" stroke="#9C27B0" stroke-width="1"/>
+  <text x="550" y="385" text-anchor="middle" class="module-text">config.py</text>
+  <text x="550" y="395" text-anchor="middle" class="label-text">25+ parameters</text>
+
+  <!-- Arrow down -->
+  <polygon points="350,405 360,420 340,420" fill="#999"/>
+
+  <!-- Layer 5: Infrastructure (gray) -->
+  <rect x="40" y="430" width="620" height="40" rx="8" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="2"/>
+  <rect x="40" y="430" width="120" height="24" rx="4" fill="#9E9E9E"/>
+  <text x="100" y="446" text-anchor="middle" class="layer-title">Infrastructure</text>
+  <text x="300" y="457" text-anchor="middle" class="module-text">utils.py (encode/decode)</text>
+  <text x="500" y="457" text-anchor="middle" class="module-text">asyncio + TCP sockets</text>
+</svg>

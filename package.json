@@ -1,0 +1,22 @@
+{
+    "urls": [
+        ["beehivemqtt/__init__.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/__init__.py"],
+        ["beehivemqtt/broker.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/broker.py"],
+        ["beehivemqtt/packet.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/packet.py"],
+        ["beehivemqtt/topic.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/topic.py"],
+        ["beehivemqtt/session.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/session.py"],
+        ["beehivemqtt/router.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/router.py"],
+        ["beehivemqtt/qos.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/qos.py"],
+        ["beehivemqtt/retained.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/retained.py"],
+        ["beehivemqtt/auth.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/auth.py"],
+        ["beehivemqtt/config.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/config.py"],
+        ["beehivemqtt/logging.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/logging.py"],
+        ["beehivemqtt/stats.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/stats.py"],
+        ["beehivemqtt/simple.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/simple.py"],
+        ["beehivemqtt/errors.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/errors.py"],
+        ["beehivemqtt/utils.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/utils.py"],
+        ["beehivemqtt/ratelimit.py", "github:mateuszsury/BeehiveMQTT/beehivemqtt/ratelimit.py"]
+    ],
+    "deps": [],
+    "version": "1.0.0"
+}

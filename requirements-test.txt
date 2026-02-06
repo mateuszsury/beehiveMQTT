@@ -1,0 +1,11 @@
+# Test dependencies for BeehiveMQTT
+
+# Core testing framework
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# Optional: Code coverage
+pytest-cov>=4.0.0
+
+# Optional: Test output formatting
+pytest-sugar>=0.9.6
