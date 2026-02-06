@@ -41,7 +41,7 @@ setup(
         'Topic :: Software Development :: Embedded Systems',
         'Topic :: System :: Networking',
         'Topic :: Communications',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -56,6 +56,6 @@ setup(
         'Framework :: AsyncIO',
     ],
     keywords='mqtt broker micropython esp32 rp2040 iot embedded asyncio',
-    license='MIT',
+    license='Apache-2.0',
     platforms='any',
 )

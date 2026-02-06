@@ -21,7 +21,7 @@
   <img src="https://img.shields.io/badge/MQTT-3.1.1-F5A623" alt="MQTT 3.1.1"/>
   <img src="https://img.shields.io/badge/QoS-0%2F1%2F2-b060e0" alt="QoS 0/1/2"/>
   <img src="https://img.shields.io/badge/tests-571%20passing-brightgreen" alt="Tests"/>
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License"/>
+  <img src="https://img.shields.io/badge/license-Apache%202.0-blue" alt="License"/>
 </p>
 
 ---
@@ -248,7 +248,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## License
 
-BeehiveMQTT is licensed under the MIT License. See [LICENSE](LICENSE) for the full license text.
+BeehiveMQTT is licensed under the Apache License 2.0. See [LICENSE](LICENSE) for the full license text.
 
 ---
 
