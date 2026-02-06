@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <linearGradient id="arch-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="box-api" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5c4a1a"/>
+      <stop offset="100%" stop-color="#3d3212"/>
+    </linearGradient>
+    <linearGradient id="box-core" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#162d50"/>
+    </linearGradient>
+    <linearGradient id="box-svc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a1a"/>
+      <stop offset="100%" stop-color="#122d12"/>
+    </linearGradient>
+    <linearGradient id="box-data" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3a1a5c"/>
+      <stop offset="100%" stop-color="#2d1250"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6fa5"/>
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="520" rx="12" fill="url(#arch-bg)"/>
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="bold" fill="#e0e0e0">Architecture</text>
+
+  <!-- Client layer -->
+  <g transform="translate(50, 55)">
+    <rect width="700" height="50" rx="8" fill="#0d1b2a" stroke="#2d4059" stroke-width="1.5"/>
+    <text x="20" y="20" font-family="monospace" font-size="11" fill="#4a6fa5" font-weight="bold">MQTT CLIENTS</text>
+    <g transform="translate(20, 28)">
+      <rect width="100" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
+      <text x="50" y="13" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">mosquitto</text>
+    </g>
+    <g transform="translate(130, 28)">
+      <rect width="90" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
+      <text x="45" y="13" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">paho-mqtt</text>
+    </g>
+    <g transform="translate(230, 28)">
+      <rect width="110" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
+      <text x="55" y="13" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">umqtt.simple</text>
+    </g>
+    <g transform="translate(350, 28)">
+      <rect width="130" height="18" rx="4" fill="#1e3a5f" opacity="0.6"/>
+      <text x="65" y="13" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">any MQTT 3.1.1</text>
+    </g>
+    <text x="590" y="38" font-family="monospace" font-size="10" fill="#4a6fa5">TCP :1883 (max 10)</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="400" y1="110" x2="400" y2="130" stroke="#4a6fa5" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Public API Layer -->
+  <g transform="translate(50, 130)">
+    <rect width="700" height="75" rx="8" fill="url(#box-api)" stroke="#F5A623" stroke-width="1.5"/>
+    <text x="20" y="20" font-family="monospace" font-size="11" fill="#F5A623" font-weight="bold">PUBLIC API</text>
+    <g transform="translate(20, 30)">
+      <rect width="130" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="65" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">MQTTBroker</text>
+      <text x="65" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">broker.py</text>
+    </g>
+    <g transform="translate(165, 30)">
+      <rect width="160" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="80" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">BeehiveBrokerSimple</text>
+      <text x="80" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">simple.py</text>
+    </g>
+    <g transform="translate(340, 30)">
+      <rect width="120" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="60" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">BrokerConfig</text>
+      <text x="60" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">config.py</text>
+    </g>
+    <g transform="translate(475, 30)">
+      <rect width="100" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="50" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">MessageContext</text>
+      <text x="50" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">interceptors</text>
+    </g>
+    <g transform="translate(590, 30)">
+      <rect width="95" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="47" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">Errors</text>
+      <text x="47" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">errors.py</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="400" y1="210" x2="400" y2="230" stroke="#4a6fa5" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Core Layer -->
+  <g transform="translate(50, 230)">
+    <rect width="700" height="75" rx="8" fill="url(#box-core)" stroke="#2d6ea7" stroke-width="1.5"/>
+    <text x="20" y="20" font-family="monospace" font-size="11" fill="#5b9bd5" font-weight="bold">PROTOCOL CORE</text>
+    <g transform="translate(20, 30)">
+      <rect width="130" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="65" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">packet.py</text>
+      <text x="65" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">parse/build 14 types</text>
+    </g>
+    <g transform="translate(165, 30)">
+      <rect width="130" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="65" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">router.py</text>
+      <text x="65" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">pub/sub routing</text>
+    </g>
+    <g transform="translate(310, 30)">
+      <rect width="120" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="60" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">qos.py</text>
+      <text x="60" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">QoS 0/1/2 flows</text>
+    </g>
+    <g transform="translate(445, 30)">
+      <rect width="120" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="60" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">utils.py</text>
+      <text x="60" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">encode/decode</text>
+    </g>
+    <g transform="translate(580, 30)">
+      <rect width="105" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="52" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">ratelimit.py</text>
+      <text x="52" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">token bucket</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="400" y1="310" x2="400" y2="330" stroke="#4a6fa5" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Services Layer -->
+  <g transform="translate(50, 330)">
+    <rect width="700" height="75" rx="8" fill="url(#box-svc)" stroke="#4CAF50" stroke-width="1.5"/>
+    <text x="20" y="20" font-family="monospace" font-size="11" fill="#66BB6A" font-weight="bold">SERVICES</text>
+    <g transform="translate(20, 30)">
+      <rect width="120" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="60" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">auth.py</text>
+      <text x="60" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">Dict/ACL/Callback</text>
+    </g>
+    <g transform="translate(155, 30)">
+      <rect width="120" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="60" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">retained.py</text>
+      <text x="60" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">LRU eviction</text>
+    </g>
+    <g transform="translate(290, 30)">
+      <rect width="100" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="50" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">stats.py</text>
+      <text x="50" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">$SYS topics</text>
+    </g>
+    <g transform="translate(405, 30)">
+      <rect width="110" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="55" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">logging.py</text>
+      <text x="55" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">level filter</text>
+    </g>
+    <g transform="translate(530, 30)">
+      <rect width="155" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="77" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">stats.MemoryGuard</text>
+      <text x="77" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">OOM protection</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="400" y1="410" x2="400" y2="430" stroke="#4a6fa5" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Data Layer -->
+  <g transform="translate(50, 430)">
+    <rect width="700" height="75" rx="8" fill="url(#box-data)" stroke="#b060e0" stroke-width="1.5"/>
+    <text x="20" y="20" font-family="monospace" font-size="11" fill="#CE93D8" font-weight="bold">DATA</text>
+    <g transform="translate(20, 30)">
+      <rect width="170" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="85" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">session.py</text>
+      <text x="85" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">client state + queues</text>
+    </g>
+    <g transform="translate(205, 30)">
+      <rect width="200" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="100" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">topic.py</text>
+      <text x="100" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">trie + wildcard + lazy children</text>
+    </g>
+    <g transform="translate(420, 30)">
+      <rect width="130" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="65" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">config.py</text>
+      <text x="65" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">25+ parameters</text>
+    </g>
+    <g transform="translate(565, 30)">
+      <rect width="120" height="35" rx="6" fill="#0d1b2a" stroke="#2d4059" stroke-width="1"/>
+      <text x="60" y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#8892b0">asyncio</text>
+      <text x="60" y="28" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a6fa5">TCP sockets</text>
+    </g>
+  </g>
+</svg>

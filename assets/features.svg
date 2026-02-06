@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
+  <defs>
+    <linearGradient id="feat-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="120" rx="12" fill="url(#feat-bg)"/>
+
+  <!-- Feature 1: QoS -->
+  <g transform="translate(15, 15)">
+    <rect width="140" height="90" rx="10" fill="#1e1e2e" stroke="#F5A623" stroke-width="1.5"/>
+    <rect x="50" y="10" width="40" height="40" rx="8" fill="#F5A623" opacity="0.15"/>
+    <text x="70" y="37" text-anchor="middle" font-family="monospace" font-size="16" fill="#F5A623">0/1/2</text>
+    <text x="70" y="68" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#e0e0e0">QoS Levels</text>
+    <text x="70" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892b0">full 4-way handshake</text>
+  </g>
+
+  <!-- Feature 2: Wildcards -->
+  <g transform="translate(170, 15)">
+    <rect width="140" height="90" rx="10" fill="#1e1e2e" stroke="#00d2ff" stroke-width="1.5"/>
+    <rect x="50" y="10" width="40" height="40" rx="8" fill="#00d2ff" opacity="0.15"/>
+    <text x="70" y="37" text-anchor="middle" font-family="monospace" font-size="18" fill="#00d2ff">+/#</text>
+    <text x="70" y="68" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#e0e0e0">Wildcards</text>
+    <text x="70" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892b0">trie-based matching</text>
+  </g>
+
+  <!-- Feature 3: Memory -->
+  <g transform="translate(325, 15)">
+    <rect width="140" height="90" rx="10" fill="#1e1e2e" stroke="#00c853" stroke-width="1.5"/>
+    <rect x="50" y="10" width="40" height="40" rx="8" fill="#00c853" opacity="0.15"/>
+    <text x="70" y="37" text-anchor="middle" font-family="monospace" font-size="16" fill="#00c853">~2KB</text>
+    <text x="70" y="68" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#e0e0e0">Per Client</text>
+    <text x="70" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892b0">slots + memoryview</text>
+  </g>
+
+  <!-- Feature 4: Auth -->
+  <g transform="translate(480, 15)">
+    <rect width="140" height="90" rx="10" fill="#1e1e2e" stroke="#ff9800" stroke-width="1.5"/>
+    <rect x="50" y="10" width="40" height="40" rx="8" fill="#ff9800" opacity="0.15"/>
+    <text x="70" y="37" text-anchor="middle" font-family="monospace" font-size="16" fill="#ff9800">ACL</text>
+    <text x="70" y="68" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#e0e0e0">Auth + ACL</text>
+    <text x="70" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892b0">dict / role / callback</text>
+  </g>
+
+  <!-- Feature 5: Tests -->
+  <g transform="translate(635, 15)">
+    <rect width="150" height="90" rx="10" fill="#1e1e2e" stroke="#b060e0" stroke-width="1.5"/>
+    <rect x="55" y="10" width="40" height="40" rx="8" fill="#b060e0" opacity="0.15"/>
+    <text x="75" y="37" text-anchor="middle" font-family="monospace" font-size="16" fill="#b060e0">571</text>
+    <text x="75" y="68" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="bold" fill="#e0e0e0">Tests</text>
+    <text x="75" y="82" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892b0">full coverage</text>
+  </g>
+</svg>
