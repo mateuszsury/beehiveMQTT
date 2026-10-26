@@ -12,7 +12,8 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    # CPython 3.9 binaries remain available on this explicitly supported image.
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
@@ -36,7 +37,7 @@ jobs:
         pytest tests/ -v
 
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     - uses: actions/checkout@v4
@@ -55,7 +56,7 @@ jobs:
       run: ruff check beehivemqtt/
 
   package:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
