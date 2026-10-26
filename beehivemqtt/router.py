@@ -5,11 +5,6 @@ Handles routing of PUBLISH messages to matching subscribers and delivery of
 retained messages to new subscribers.
 """
 
-try:
-    import asyncio
-except ImportError:
-    import uasyncio as asyncio
-
 from .packet import build_publish
 
 

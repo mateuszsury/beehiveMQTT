@@ -7,7 +7,6 @@ statistics, and memory management.
 
 import gc
 import struct
-import time
 
 try:
     import asyncio

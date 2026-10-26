@@ -67,3 +67,6 @@ plan.md
 *.db
 *.sqlite
 *.sqlite3
+
+# Generated development files
+.ruff_cache/
