@@ -1,9 +1,11 @@
+# BeehiveMQTT — MQTT 3.1.1 for MicroPython
+
 <p align="center">
   <img src="assets/banner.svg" alt="BeehiveMQTT" width="800"/>
 </p>
 
 <p align="center">
-  <strong>The first native MQTT 3.1.1 broker for MicroPython</strong>
+  <strong>A native MQTT 3.1.1 broker for MicroPython</strong>
 </p>
 
 <p align="center">
@@ -26,11 +28,19 @@
 
 ---
 
-BeehiveMQTT is the first and only native MQTT 3.1.1 broker for MicroPython, running directly on ESP32/RP2040 microcontrollers without requiring external infrastructure. Perfect for edge computing, IoT gateways, and distributed sensor networks.
+BeehiveMQTT runs an MQTT 3.1.1 broker directly on MicroPython devices. It supports local messaging for sensor networks and gateways; see the documented board requirements and resource limits.
 
 <p align="center">
   <img src="assets/features.svg" alt="Features" width="800"/>
 </p>
+
+## Project overview
+
+A native MQTT 3.1.1 broker for MicroPython on ESP32 and RP2040.
+
+![BeehiveMQTT — Broker architecture overview. Board and firmware validation are distinct from host protocol tests.](docs/assets/presentation/overview.svg)
+
+Broker architecture overview. Board and firmware validation are distinct from host protocol tests.
 
 ## Quick Start
 
